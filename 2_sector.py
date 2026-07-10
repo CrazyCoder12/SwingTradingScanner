@@ -106,7 +106,7 @@ log = logging.getLogger(__name__)
 SECTOR_TICKERS: dict[str, list[str]] = {
     "Technology": [
         "AAPL","MSFT","NVDA","AVGO","AMD","ORCL","CRM","INTC","QCOM","TXN",
-        "MU","NOW","AMAT","KLAC","LRCX","ADI","MRVL","PANW","SNPS","CDNS",
+        "MU","NOW","AMAT","KLAC","LRCX","ADI","MRVL","PANW","SNPS","CDNS","PLTR","DELL"
     ],
     "Healthcare": [
         "UNH","JNJ","LLY","ABBV","MRK","TMO","ABT","DHR","BMY","AMGN",
@@ -118,7 +118,7 @@ SECTOR_TICKERS: dict[str, list[str]] = {
     ],
     "Consumer Discretionary": [
         "AMZN","TSLA","HD","MCD","NKE","LOW","SBUX","BKNG","TJX","ORLY",
-        "GM","F","ABNB","YUM","DRI","HLT","MAR","RCL","CCL","TSCO",
+        "GM","F","ABNB","YUM","DRI","HLT","MAR","RCL","CCL","TSCO","BABA"
     ],
     "Communication Services": [
         "GOOGL","META","NFLX","DIS","T","VZ","CMCSA","CHTR","EA","TTWO",
@@ -126,7 +126,7 @@ SECTOR_TICKERS: dict[str, list[str]] = {
     ],
     "Industrials": [
         "RTX","HON","UNP","CAT","DE","BA","LMT","GE","MMM","FDX",
-        "UPS","EMR","ETN","PH","CMI","CTAS","NSC","CSX","CARR","TDG",
+        "UPS","EMR","ETN","PH","CMI","CTAS","NSC","CSX","CARR","TDG","GEV","SIEGY","SBGSF"
     ],
     "Consumer Staples": [
         "PG","KO","PEP","COST","WMT","PM","MO","MDLZ","CL","GIS",
@@ -134,11 +134,11 @@ SECTOR_TICKERS: dict[str, list[str]] = {
     ],
     "Energy": [
         "XOM","CVX","COP","EOG","SLB","MPC","PSX","VLO","OXY",
-        "HES","HAL","DVN","BKR","APA","MRO","EQT","KMI","WMB","TRGP","NOG",
+        "HAL","DVN","BKR","APA","MRO","EQT","KMI","WMB","TRGP","NOG","ENB","BEPC"
     ],
     "Utilities": [
         "NEE","DUK","SO","D","AEP","EXC","SRE","XEL","ED","ETR",
-        "PCG","WEC","ES","AWK","DTE","CMS","CNP","NI","AES","PPL",
+        "PCG","WEC","ES","AWK","DTE","CMS","CNP","NI","AES","PPL","CEG","AWR"
     ],
     "Real Estate": [
         "PLD","AMT","EQIX","CCI","PSA","SPG","O","WELL","DLR","AVB",
@@ -146,7 +146,7 @@ SECTOR_TICKERS: dict[str, list[str]] = {
     ],
     "Materials": [
         "LIN","APD","SHW","ECL","DD","NEM","FCX","NUE","VMC","MLM",
-        "CF","MOS","ALB","RPM","PKG","IP","SEE","SON","GEF","SLGN",
+        "CF","MOS","ALB","RPM","PKG","IP","SEE","SON","GEF","SLGN","RIO","BHP"
     ],
 }
 
