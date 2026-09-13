@@ -1,5 +1,38 @@
-# .gitignore
+# Credentials and local configuration
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+did.bin
+
+# Python environments, builds, and caches
 .venv/
+venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor and OS metadata
+.idea/
+.vscode/
+.DS_Store
+.claude/
+
+# Generated research output
+reports/
+snapshots/
+*.csv
+*.log
+backtest_*_report.txt
+snapshot_*.json
+sector_scan_results/
+sector_snapshots/
+*_snapshot_*_summary.json
+20??-??-??/

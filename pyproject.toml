@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swing-trading-scanner"
+version = "0.1.0"
+description = "Python stock scanners and historical strategy backtests using Alpaca and Yahoo Finance data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.2,<3",
+  "numpy>=1.26,<3",
+  "requests>=2.31,<3",
+  "python-dotenv>=1,<2",
+  "tabulate>=0.9,<1",
+  "pytz>=2024.1",
+  "alpaca-py>=0.30,<1",
+  "yfinance>=0.2.54,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "build>=1,<2"]
+
+[project.scripts]
+swing-scanner = "swing_trading_scanner.cli:main"
+
+[project.urls]
+Repository = "https://github.com/CrazyCoder12/SwingTradingScanner"
+Issues = "https://github.com/CrazyCoder12/SwingTradingScanner/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]
